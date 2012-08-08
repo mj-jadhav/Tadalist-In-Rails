@@ -1,0 +1,44 @@
+<HTML>
+<head>
+<%= stylesheet_link_tag "application", :media => "all" %>
+</head>
+<BODY>
+	 <form class="well form-inline" action="login_home.html">
+		<div align="left">
+			<h1> TADALIST CLONE</h1>
+		</div>
+		<div align="right">
+			<input type="text" class="input-medium" placeholder="Email">
+			<input type="password" class="input-medium" placeholder="Password">
+			<!--<label class="checkbox">
+			<input type="checkbox"> Remember me -->
+			</label>
+			<button type="submit" class="btn btn-primary">Sign in</button>
+		</div>
+    </form>
+    
+    <div align="center">
+		<form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
+
+		<label for="user_name">User Name</label>
+		<input id="user_name" name="user[user_name]" size="30" type="text" />
+
+		<label for="full_name">Full Name</label>
+		<input id="full_name" name="user[full_name]" size="30" type="text" />
+		
+		<label for="user_email">Email</label>
+		<input id="user_email" name="user[email]" size="30" type="text" />
+
+		<label for="user_password">Password</label>
+		<input id="user_password" name="user[password]" size="30" type="password" />
+
+		<label for="user_password_confirmation">Confirmation</label>
+		<input id="user_password_confirmation" name="user[password_confirmation]" size="30" type="password" />
+		<br>
+		<input class="btn btn-large btn-primary" name="commit" type="submit" value="Create my account" />
+		</form>
+	</div>
+
+	
+</BODY>
+</HTML>
